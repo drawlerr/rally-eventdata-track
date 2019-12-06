@@ -1,7 +1,7 @@
 {
-  "name": "fieldstats_elasticlogs_q-*",
+  "name": "fieldstats_elasticlogs-*",
   "operation-type": "fieldstats",
-  "index_pattern": "elasticlogs_q-*"
+  "index_pattern": "elasticlogs-*"
 },
 {
   "name": "indicesstats_elasticlogs",
