@@ -80,4 +80,5 @@ def fieldstats(es, params):
         logger.info("Identified statistics for field '%s' in '%s'. Min: %d, Max: %d",
                     field_name, index_pattern, min_field_value, max_field_value)
     else:
-        raise AssertionError("No matching data found for field '{}' in pattern '{}'.".format(field_name, index_pattern))
+        logger = logging.getLogger("track.eventdata.fieldstats")
+        logger.warning(("No matching data found for field '{}' in pattern '{}'.".format(field_name, index_pattern))
